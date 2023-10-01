@@ -17,4 +17,12 @@ describe("QueryProcessor", () => {
             "writer in the English language and the world's pre-eminent dramatist."
           ));
     });
+
+    test('should return andrewId', () => {
+        const query = "Andrew ID";
+        const response: string = QueryProcessor(query);
+        expect(response).toBe((
+            "ssaloos"
+          ));
+    });
 });
